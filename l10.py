@@ -1,6 +1,8 @@
 import streamlit as st
 import time
 
+st.title("タイマーアプリ")
+
 hours = st.slider("hours", min_value=0, max_value=24,value=0)
 minutes = st.slider("minites", min_value=0, max_value=59,value=0)
 seconds = st.slider("secouns", min_value=0, max_value=59,value=0)
