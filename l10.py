@@ -8,7 +8,7 @@ seconds = st.slider("secouns", min_value=0, max_value=59,value=0)
 
 total_seconds = hours * 3600 + minutes * 60 + seconds
 
-if st.button("set up"):
+if st.button("set up(タイマースタート)"):
 
     placeholder = st.empty()
 
@@ -17,8 +17,7 @@ if st.button("set up"):
         m = (t % 3600) // 60
         s = t % 60
 
-        placeholder.write(f"{h}h{m}m{s}s")
+        placeholder.write(f"残り{h}h{m}m{s}s")
         time.sleep(1)
 
-    placeholder.write("time up")
-    st.audio("suzo-susuru")
+    placeholder.write("time up!")
