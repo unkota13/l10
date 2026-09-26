@@ -22,3 +22,4 @@ if st.button("タイマースタート"):
         time.sleep(1)
 
     placeholder.write("time up!")
+    st.audio("大爆発1.mp3")
